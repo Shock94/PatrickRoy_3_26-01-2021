@@ -1,0 +1,528 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("./Roboto/Roboto-Regular.ttf");
+}
+@keyframes accueil {                            /*ANIMATION DECALE LE SITE AVANT LE CHARGEMENT*/
+    0% {
+        transform: translateX(-10000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+header, section, footer {
+    animation-name: accueil;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+.blocBarreDeChargement {
+    position: absolute;
+    border: 2px solid black;
+    top: 250px;
+    width: 90%;
+    height: 70px;
+    margin: 5%;
+}
+.barreDeChargement {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: chargement;
+    transform-origin: left;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+.barreDeChargement i {
+    font-size: 2em;
+    position: relative;
+    right: 10%;
+    animation-name: rotation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.barreDeChargement img {
+    width: 50%;
+    height: 90%;
+}
+@keyframes rotation {                           /*ANIMATION SPIN QUI TOURNE*/
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+@keyframes chargement {                         /*ANIMATION BARRE DE CHARGEMENT*/
+    from {
+        transform: scaleX(0);
+        background-color: #9356DC;
+        opacity: 0.1;
+    }
+
+    17% {
+        transform: scaleX(0.2);
+        opacity: 0.2;
+    }
+
+    37% {
+        transform: scaleX(0.4);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: scaleX(0.5);
+    }
+
+    67% {
+        transform: scaleX(0.7);
+        background-color: #FF79DA;
+    }
+    
+    86% {
+        transform: scaleX(0.9);
+    }
+
+    to {
+        transform: scaleX(1);
+        background-color: #99E2D0;
+        opacity: 1;
+    }
+}
+a { /*Supprimer le soulignement et couleur*/
+    text-decoration: none;
+    color: black;
+}
+.blocHeader {                                                    /*HEADER*/
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.blocHeader img {
+    width: 50%;
+    padding-top: 2%;
+
+}
+.blocHeader a {
+    display: contents;
+}
+.blocPrincipalReservation {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 470px;
+}
+.geolocalisation {
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+}
+.geolocalisation i {
+    font-size: 1.5em;
+    position: relative;
+    right: 5%;
+    display: flex;
+    align-items: center;
+}
+.lieuGeolocaliser {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1%;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.intro1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 8%;
+}
+.intro1 em, .intro2 em, .bouton {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+    margin-bottom: 1%;
+}
+.intro2 {
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+.bouton {
+    height: 20%;
+    margin-top: 8%;
+    justify-content: center;
+}
+.bouton button {
+    cursor: pointer;  /* Affiche le cursuer souris "main" */
+    border-radius: 80px;
+    width: 65%;
+    height: 75%;
+    box-shadow: 7px 7px 10px #757575;
+    background: #9356DC; /* background uni pour les navigateurs qui ne supportent pas linear-gradient */
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    transition: box-shadow 0.5s, opacity 0.5s;
+    opacity: 1;
+}
+.bouton button:hover {
+    box-shadow: 7px 7px 10px #1f1f1f;
+    opacity: 0.8;
+}
+.bouton span {
+    color: white;
+    font-size: 1.5em;
+}   
+/* Classe standard pour masquer visuellement un élément tout en restant accessible */
+/* @source https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }        
+                                                                /*SECTION FONCTIONNEMENT*/
+.blocPrincipalFonctionnement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 530px;
+}
+h1,h2 {
+    font-weight: bold;
+    font-size: 1.7em;
+    align-self: flex-start;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+.blocChoixMenu {
+    width: 85%;
+    height: 15%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 20px darkgray;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.cerclenumero {
+    position: relative;
+    width: 8%;
+    height: 30%;
+    right: 20%;
+    top: 36%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+}
+.cerclenumero1 {
+    position: relative;
+    width: 8%;
+    height: 30%;
+    right: 21%;
+    top: 36%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+}
+.cerclenumero em, .cerclenumero1 em {
+    color: white;
+    font-style: normal;
+    font-size: 1em;
+    display: flex;
+    justify-items: center;
+}
+.logoPhone {
+    font-size: 1.75em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10%;
+    color: grey;
+}
+.texteChoixMenu, .texteChoixMenu2, .texteChoixMenu3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.texteChoixMenu2, .texteChoixMenu3 {
+    right: 4%;
+}
+.logoMenu {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 12%;
+    color: grey;
+}
+.logoRestaurant {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 12%;
+}
+.logoRestaurant i {
+    color: #9356DC;
+}
+.blocPrincipalRestaurant {                                       /*SECTION RESTAURANT*/
+    width: 100%;
+    height: 1250px;
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+.blocVignette {
+    background-color: white;
+    box-shadow: 10px 10px 5px whitesmoke;
+    width: 90%;
+    height: 23%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+.vignetteNouveau {
+    border-radius: 5%;
+    background-color: #00d0a5;
+    color:#1b755f;
+    font-size: 1.1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 94%;
+    left: 69%;
+    width: 27%;
+    height: 15%;
+}
+.vignetteNouveau a {
+    color: #1b755f;
+}
+.imageVignette { /*Définir la taille du bloc qui contient l'image*/
+    width: 100%;
+    height: 70%;
+}
+.imageVignette img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    object-fit: cover; /*rend l'image plus net*/
+}
+.descriptionRestaurant {
+    display: flex;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+.descriptionRestaurant1 {
+    display: flex;
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.blocPlacementDescription {
+    padding-right: 20%;
+}
+.blocPlacementDescription1 {
+    padding-right: 30%;
+    margin-bottom: 8%;
+}
+.blocPlacementDescription2 {
+    padding-right: 20%;
+    margin-bottom: 10%;
+}
+.nomRestaurant {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.villeRestaurant {
+    font-size: 1.1em;
+}
+.logoLike {
+    cursor: pointer;    /* Affiche le cursuer souris "main" */
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    z-index: 1;
+    position: relative;   /* indique que les éléments dans le <i> ont un positionnement relatif à <i> */ 
+    border: 0;
+    background: none;
+    padding: 0;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.logoLike::before,
+.logoLike::after, .logoLike1::before,.logoLike1::after {
+    font-family: "Font Awesome 5 Free"; /*Remplace balise i*/ 
+    content: "\f004";  /* \f004 représente le caractère du coeur (.fa-heart) Coeur plein */
+}
+.logoLike::after, .logoLike1::after {
+    font-weight: 900; /* 900 remplie le caractère du coeur (.fas) */
+    position: absolute;  /* positionne le coeur en haut à gauche du <i> (qui a un positionnement relatif) */
+    top: 0;
+    left: 0;
+    transition: transform 2s; /*indique que la durée de la transition de transform dure 2s */
+    transform: scale(0); /*on scale à 0 pour masquer le coeur */
+}
+.logoLike:hover::after, .logoLike1:hover::after {
+    transform: scale(0.9); /*Au hover on scale à 1 donc a taille normal*/
+    color: #9356DC;
+}
+.logoLike1 {
+    margin-bottom: 8%;
+    margin-right: 3%;
+    font-size: 1.5em;
+    z-index: 1;
+    position: relative;   /* indique que les éléments dans le <i> ont un positionnement relatif à <i> */ 
+    border: 0;
+    background: none;
+    padding: 0;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}                                                               
+.blocPrincipalFooter {                                           
+    background-color: rgb(100, 95, 95);
+    height: 250px;
+    width: 100%;
+}      
+.blocPrincipalFooter img {
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 13%;
+}   
+.blocNav {
+    font-size: 1.2em;
+}
+footer ul {
+    list-style-type: none; /*Supprimer les puces*/
+}
+footer ul li {
+    margin-bottom: 1%;
+    margin-left: 4%;
+}
+footer ul li em {
+    margin-left: 3%;
+    font-style: normal;
+}
+footer ul li strong {
+    font-size: 0.7em;
+}
+footer a {
+    color: white;
+}
+
+
+
+@media all and (min-width: 1024px) {                /*Granc écran*/
+    .blocHeader {
+        margin-top: 0;
+        margin-bottom: 1%;    
+    }  
+    .blocHeader img {
+        width: 50%;
+    }
+    .geolocalisation {
+        height: 80px;
+        font-size: 1.3em;
+    }
+    .intro1 {
+        margin-top: 2%;
+    }
+    .intro1 em, .intro2 em, .bouton {
+        margin-bottom: 0;
+    }
+    .bouton button {
+        width: 50%;
+    }
+    .bouton {                                           /*FIN HEADER*/
+        margin-top: 3%;
+    }
+    h1, h2 {
+        margin-top: 2%;
+    }
+    .blocPrincipalFonctionnement{
+        height: 300px;
+        flex-direction: row;
+    }
+    .blocChoixMenu {
+        width: 35%;
+        height: 25%;
+        margin-right: 3%;
+        position: relative;
+        right: 8%;
+        top: 3%;
+        margin-bottom: 1%;
+    }
+    .cerclenumero, .cerclenumero1 {
+        right: 18%;
+    }
+    h2 {
+        width: 100%;
+    }
+    .blocPrincipalRestaurant {
+        height: 600px;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+    }
+    .blocVignette {
+        width: 30%;
+        height: 40%;
+        margin-left: 5%;
+    }
+    .blocPlacementDescription1, .blocPlacementDescription2 {
+        margin-bottom: 5%;
+    }
+    .logoLike1 {
+        margin-bottom: 7%;
+    }
+    footer ul {
+        display: flex;
+        margin-top: 5%;
+    }
+    footer ul li:last-child {
+        margin-top: 2%;
+    }
+    .blocPrincipalFooter {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .blocPrincipalFooter img {
+        width: 50%;
+    }
+    .blocPrincipalFooter img a {
+        box-sizing: border-box;
+    }
+}

@@ -526,3 +526,14 @@ footer a {
         box-sizing: border-box;
     }
 }
+@media all and (max-width: 375px) {
+    .cerclenumero {
+        right: 17%;
+    }
+    .cerclenumero1 {
+        right: 18%;
+    }
+    .bouton button {
+        width: 70%;
+    }
+}

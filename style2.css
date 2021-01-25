@@ -66,6 +66,7 @@ a {
     font-size: 2em;
     font-style: italic;
     position: relative;
+    left: 3%;
 }
 .logoLike {
     cursor: pointer;    /* Affiche le cursuer souris "main" */

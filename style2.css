@@ -264,6 +264,7 @@ body {
     border-radius: 80px;
     width: 53%;
     height: 70%;
+    border: none;
     box-shadow: 7px 7px 10px #757575; /*Utiliser une ombre plus claire au départ*/
     background: #9356DC; /* background uni pour les navigateurs qui ne supportent pas linear-gradient */
     background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);

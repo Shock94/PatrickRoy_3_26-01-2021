@@ -455,10 +455,7 @@ footer a {
 @media all and (min-width: 1024px) {                /*Granc écran*/
     .blocHeader {
         margin-top: 0;
-        margin-bottom: 1%;    
-    }  
-    .blocHeader img {
-        width: 50%;
+        font-size :5em;
     }
     .geolocalisation {
         height: 80px;
@@ -526,12 +523,10 @@ footer a {
         display: flex;
         justify-content: center;
     }
-    .blocPrincipalFooter img {
-        width: 50%;
-    }
-    .blocPrincipalFooter img a {
-        box-sizing: border-box;
-    }
+    .blocPrincipalFooter span {
+	margin-left: 0;
+	top: 30%
+	right: 25%;
 }
 @media all and (max-width: 375px) {
     .cerclenumero {

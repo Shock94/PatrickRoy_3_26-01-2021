@@ -2,6 +2,10 @@
 	font-family: "Roboto";
 	src: url("./Roboto/Roboto-Regular.ttf");
 }
+@font-face {
+    font-family: "Shrikhand";
+    src: url("./Shrikhand/Shrikhand-Regular.ttf")
+}
 @keyframes accueil {                            /*ANIMATION DECALE LE SITE AVANT LE CHARGEMENT*/
     0% {
         transform: translateX(-10000px);

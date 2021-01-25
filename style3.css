@@ -170,6 +170,7 @@ a { /*Supprimer le soulignement et couleur*/
     border-radius: 80px;
     width: 65%;
     height: 75%;
+    border: none;
     box-shadow: 7px 7px 10px #757575;
     background: #9356DC; /* background uni pour les navigateurs qui ne supportent pas linear-gradient */
     background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);

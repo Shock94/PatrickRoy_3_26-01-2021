@@ -524,8 +524,9 @@ footer a {
         justify-content: center;
     }
     .blocPrincipalFooter span {
+	font-size: 2em;
 	margin-left: 0;
-	top: 30%
+	top: 30%;
 	right: 25%;
 }
 @media all and (max-width: 375px) {

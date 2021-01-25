@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Roboto";
-	src: url("./Roboto/Roboto-Regular.ttf");
+    src: url("./Roboto/Roboto-Regular.ttf");
 }
 @font-face {
     font-family: "Shrikhand";
@@ -418,7 +418,7 @@ h1,h2 {
     background-color: rgb(100, 95, 95);
     height: 250px;
     width: 100%;
-} 
+}
 .blocPrincipalFooter span {
     font-family: Shrikhand;
     font-weight: bold;
@@ -427,7 +427,7 @@ h1,h2 {
     margin-left: 13%;
     position: relative;
     top: 10%;
-}  
+}     
 .blocNav {
     font-size: 1.2em;
 }
@@ -450,13 +450,11 @@ footer a {
     color: white;
 }
 
-
-
 @media all and (min-width: 1024px) {                /*Granc écran*/
     .blocHeader {
-        margin-top: 0;
-        font-size :5em;
-    }
+        margin-top: 0; 
+        font-size: 5em; 
+    }  
     .geolocalisation {
         height: 80px;
         font-size: 1.3em;
@@ -524,12 +522,13 @@ footer a {
         justify-content: center;
     }
     .blocPrincipalFooter span {
-	font-size: 2em;
-	margin-left: 0;
-	top: 30%;
-	right: 25%;
+        font-size: 2em;
+        margin-left: 0;
+        top: 30%;
+        right: 25%;
+    }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 375px) {                     /*Petit ecran*/
     .cerclenumero {
         right: 17%;
     }

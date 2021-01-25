@@ -10,22 +10,24 @@ body {
     font-family: Roboto;
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
 .blocHeader {                                                    /*HEADER*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
 }
-.blocHeader img {
-    width: 50%;
-    position: relative;
-    left: 23%;
-    margin-top: 1%;
+.blocHeader span {
+    font-family: Shrikhand;
+    font-weight: bold;
+    font-size: 2.4em;
 }
 .blocHeader i {
     font-size: 1.5em;
     position: relative;
-    left: 150%;
+    right: 250%;
 }
 .blocHeader a {
     color: black;
@@ -37,7 +39,6 @@ body {
 .imageRestaurant {
     width: 100%;
     height: 100%;
-    margin-top: 2%;
 }
 .imageRestaurant img {
     width: 100%;
@@ -59,10 +60,10 @@ body {
     align-items: center;
 }
 .blocTitre h1 {
+    font-family: shrikhand;
     font-size: 2em;
     font-style: italic;
     position: relative;
-    right: 3%;
 }
 .logoLike {
     cursor: pointer;    /* Affiche le cursuer souris "main" */
@@ -290,12 +291,16 @@ body {
     background-color: rgb(100, 95, 95);
     height: 250px;
     width: 100%;
-}      
-.blocPrincipalFooter img {
-    width: 40%;
-    margin-top: 10%;
+}
+.blocPrincipalFooter span {
+    font-family: Shrikhand;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
     margin-left: 13%;
-}   
+    position: relative;
+    top: 10%;
+}       
 .blocNav {
     font-size: 1.2em;
 }
@@ -305,6 +310,7 @@ ul li a { /*Supprimer le soulignement et couleur*/
 }
 ul {
     list-style-type: none; /*Supprimer les puces*/
+    margin-top: 10%;
 }
 ul li {
     margin-bottom: 1%;
@@ -323,19 +329,15 @@ footer a {
 
 														/*RESPONSIVE DESIGN*/ 
 @media all and (min-width: 1024px) {/*Grand écran*/
-    .blocHeader img {
-        width: 50%;
-        padding-top: 1%;
-    }
     .blocHeader {
-        margin-bottom: 1%;
         margin-top: 0;
-        display: block;
+    }
+    .blocHeader span {
+        font-size: 5em;
     }
     .blocHeader i {
-        left: 10%;
-        bottom: 40px;
-        font-size: 3em;
+        font-size: 2.5em;
+        right: 700%;
     }
     .imageRestaurant {
         margin-top: 0;
@@ -434,11 +436,10 @@ footer a {
         display: flex;
         justify-content: center;
     }
-    .blocPrincipalFooter img {
-        width: 50%;
+    .blocPrincipalFooter span {
+        font-size: 2em;
+        margin-left: 0;
+        top: 30%;
+        right: 25%;
     }
-    .blocPrincipalFooter img a {
-        box-sizing: border-box;
-    }
-
 }

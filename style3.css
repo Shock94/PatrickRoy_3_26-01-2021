@@ -418,17 +418,22 @@ h1,h2 {
     background-color: rgb(100, 95, 95);
     height: 250px;
     width: 100%;
-}      
-.blocPrincipalFooter img {
-    width: 40%;
-    margin-top: 10%;
+} 
+.blocPrincipalFooter span {
+    font-family: Shrikhand;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
     margin-left: 13%;
-}   
+    position: relative;
+    top: 10%;
+}  
 .blocNav {
     font-size: 1.2em;
 }
 footer ul {
     list-style-type: none; /*Supprimer les puces*/
+    margin-top: 10%;
 }
 footer ul li {
     margin-bottom: 1%;
